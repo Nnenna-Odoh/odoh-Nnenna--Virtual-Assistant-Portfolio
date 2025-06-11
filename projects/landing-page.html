@@ -1,0 +1,54 @@
+html
+
+<!-- projects/landing-page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equine Retreat Landing Page</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .hero { background: url('../assets/horses.jpg') center/cover; color: white; padding: 100px 20px; text-align: center; }
+        .form-container { margin: 20px auto; max-width: 600px; }
+        input, button { padding: 10px; margin: 5px; width: 100%; }
+        button { background: #4CAF50; color: white; border: none; cursor: pointer; }
+        @media (max-width: 600px) { .hero { padding: 50px 10px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Equine-Assisted Healing Retreat</h1>
+        <a href="../index.html">Back to Home</a>
+    </header>
+    <section class="hero">
+        <h2>Reclaim Your Joy with Our Healing Herd</h2>
+        <p>Join our transformative retreat guided by energy work and horses.</p>
+        <button onclick="document.getElementById('signup').scrollIntoView()">Sign Up Now</button>
+    </section>
+    <section class="form-container" id="signup">
+        <h3>Register Today</h3>
+        <form onsubmit="validateForm(event)">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section>
+        <h3>Testimonials</h3>
+        <p>"This retreat changed my life. The horses helped me find peace." - Jane D.</p>
+    </section>
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            if (email.includes('@')) {
+                alert('Thank you for signing up!');
+            } else {
+                alert('Please enter a valid email.');
+            }
+        }
+    </script>
+</body>
+</html>
+
