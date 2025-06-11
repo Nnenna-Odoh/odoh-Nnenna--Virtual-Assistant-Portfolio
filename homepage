@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Aspiring Virtual Assistant passionate about wellness and tech</p>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I’m currently pursuing certifications in Meta Social Media Marketing and Johns Hopkins Web Development (HTML, CSS, JavaScript). I’m eager to support heart-centered businesses with skills in social media, web development, and organization. Passionate about wellness and spirituality, I’m a kind and proactive team player.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div>
+            <h3>Social Media Campaign</h3>
+            <p>Created a 5-post Instagram campaign and Reel for a wellness brand using Canva.</p>
+            <a href="projects/social-media.html">View Project</a>
+        </div>
+        <div>
+            <h3>Equine Retreat Landing Page</h3>
+            <p>Built a responsive landing page with HTML, CSS, and JavaScript.</p>
+            <a href="projects/landing-page.html">View Project</a>
+        </div>
+        <div>
+            <h3>Email Funnel & Engagement Plan</h3>
+            <p>Designed a 3-email sequence and community engagement plan.</p>
+            <a href="projects/email-funnel.html">View Project</a>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
+    </section>
+</body>
+</html>
